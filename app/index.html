@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Light Control Panel</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Light Control Panel</h1>
+      <div class="section">
+        <div class="section">
+          <h2>Filters</h2>
+          <input type="text" id="filterKey" placeholder="Key" />
+          <input type="text" id="filterValue" placeholder="Value" />
+          <button id="addFilterBtn">Add Filter</button>
+          <div id="currentFilters"></div>
+        </div>
+
+        <div class="section">
+          <h2>Updates</h2>
+          <input type="text" id="updateKey" placeholder="Key" />
+          <input type="text" id="updateValue" placeholder="Value" />
+          <button id="addUpdateBtn">Add Update</button>
+          <div id="currentUpdates"></div>
+        </div>
+        <button id="stageGroupBtn">Stage group</button>
+      </div>
+      <div class="section">
+        <h2>Staged groups</h2>
+        <div id="stagedGroups"></div>
+      </div>
+
+      <button id="commitChangesBtn">Commit changes</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

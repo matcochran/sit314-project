@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinator Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Coordinator Dashboard</h1>
+
+        <section id="config" class="card">
+            <h2>Configuration</h2>
+            <pre id="configData"></pre>
+        </section>
+
+        <section id="devices" class="card">
+            <h2>Devices</h2>
+            <h3>Hubs</h3>
+            <ul id="hubList"></ul>
+
+            <h3>Lights</h3>
+            <ul id="lightList"></ul>
+        </section>
+
+        <section id="logs" class="card">
+            <h2>Logs</h2>
+            <textarea id="logList" readonly></textarea>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

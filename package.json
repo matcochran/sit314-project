@@ -1,0 +1,37 @@
+{
+  "name": "smart-lighting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "coordinator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "kill": "npx kill-port 3000",
+    "build": "npx webpack",
+    "coordinator": "ts-node --transpile-only src/devices/coordinator.ts",
+    "hub": "ts-node --transpile-only src/devices/hub.ts",
+    "light": "ts-node --transpile-only src/devices/light.ts",
+    "backend": "ts-node --transpile-only src/backend.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.5.4",
+    "ts-node": "^10.9.1",
+    "uuid": "^9.0.1",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.3",
+    "@types/express": "^4.17.18",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
